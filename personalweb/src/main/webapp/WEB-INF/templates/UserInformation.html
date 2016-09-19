@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Additional info</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/style.css}"/>
+</head>
+<body>
+<div class="login">
+    <h1>Additional information</h1>
+
+    <form action="#" th:action="@{/Register}" th:object="${user}" method="post">
+        First name: <input type="text"  placeholder="First name" required="required" th:field="*{firstName}"/>
+        Last name: <input type="text"  placeholder="Last name" required="required" th:field="*{lastName}"/>
+
+        <button type="submit" name="submitButton" class="btn btn-primary btn-block btn-large">Save</button>
+        <button type="submit" name="backButton" class="btn btn-primary btn-block btn-large" formnovalidate="formnovalidate">Back</button>
+
+    </form>
+
+</div>
+</body>
+</html>
