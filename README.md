@@ -1,2 +1,0 @@
-# TutorMe
-Kooli tarkvara projekt
