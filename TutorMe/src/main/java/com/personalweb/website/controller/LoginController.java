@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.validation.Valid;
 
 @Controller
-@RequestMapping(value="/Login")
+@RequestMapping(value="/")
 public class LoginController {
 
     @Autowired
@@ -21,7 +21,7 @@ public class LoginController {
     @RequestMapping(method = RequestMethod.GET)
     public String index(Model model) {
         model.addAttribute("user", new PageUser());
-        return "LoginPage";
+        return "index";
     }
 
     @RequestMapping(method = RequestMethod.POST, params = "registerButton")
@@ -39,7 +39,7 @@ public class LoginController {
         } else {
             model.addAttribute("errorText", "email or password incorrect");
             model.addAttribute("user", user);
-            return "LoginPage";
+            return "index";
         }
     }
 
