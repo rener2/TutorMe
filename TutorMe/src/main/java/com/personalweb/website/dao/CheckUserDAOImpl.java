@@ -21,11 +21,8 @@ public class CheckUserDAOImpl implements CheckUserDAO {
 
     DatabaseHelper databaseHelper = new DatabaseHelper();
 
-
-
     public PageUser getUser(PageUser user) {
         String query = "SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ?";
-
         return jdbcTemplate.execute(query,
                 new PreparedStatementCallback<PageUser>(){
                     @Override
@@ -53,6 +50,7 @@ public class CheckUserDAOImpl implements CheckUserDAO {
         user.setFirstName(rs.getString("first_name"));
         user.setLastName(rs.getString("last_name"));
         user.setPassword(rs.getString("password"));
+        user.setUserID(rs.getLong("user_id"));
         return user;
     }
 

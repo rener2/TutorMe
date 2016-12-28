@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/html" layout:decorator="layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Kuulutus</title>
+</head>
+
+<body>
+
+<div layout:fragment="content" id="ad-content">
+    <img th:src="${user.imagesrc}" class="profile-picture"/>
+<form action="#" th:object="${ad}" method="post">
+    <h2 class="edit-text">Aine mida soovid õpetada:</h2>
+    <input type="text" name="subject" th:field="*{subject}" class="edit-inputs"/><br></br>
+    <h2 class="edit-text">Suhtluskeel:</h2>
+    <input type="text" name="language" th:field="*{studyLanguage}" class="edit-inputs"/><br></br>
+    <h2 class="edit-text">Tunnitasu:</h2>
+    <input type="text" name="payment" th:field="*{hourlyFee}" class="edit-inputs"/><br></br>
+    <h2 class="edit-text">Kontakt:</h2>
+    <input type="text" name="contact" th:field="*{contact}" class="edit-inputs"/><br></br>
+    <button class="user-buttons">LISA</button>
+</form>
+</div>
+</body>
+</html>

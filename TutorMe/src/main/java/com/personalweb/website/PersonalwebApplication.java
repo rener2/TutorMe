@@ -13,11 +13,13 @@ import java.util.Properties;
 
 
 @SpringBootApplication
+@ImportResource("classpath:applicationContext.xml")
 public class PersonalwebApplication {
 
 	public static void main(String[] args) throws java.io.IOException{
        SpringApplication.run(PersonalwebApplication.class, args);
-    }	}
+    }
+}
 
 
 

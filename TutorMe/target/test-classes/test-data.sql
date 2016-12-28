@@ -1,0 +1,34 @@
+CREATE USER IF NOT EXISTS SA SALT 'b1d12a6bf45d04a2' HASH 'd5b40f6a40f3360ea54fd33e97e5344c964881f14c5a4a59d51dbf62514d1a49' ADMIN;
+
+CREATE SCHEMA IF NOT EXISTS WEB AUTHORIZATION SA;
+
+CREATE CACHED TABLE  IF NOT EXISTS WEB.SUBJECT(
+  SUBJECT_ID INTEGER NOT NULL,
+  SUBJECT_NAME VARCHAR(50),
+  SUBJECT_GROUP VARCHAR(50)
+);
+
+ALTER TABLE WEB.SUBJECT ADD CONSTRAINT  IF NOT EXISTS WEB.CONSTRAINT_B PRIMARY KEY(SUBJECT_ID);
+
+CREATE CACHED TABLE  IF NOT EXISTS WEB.USER(
+  USER_ID INTEGER NOT NULL,
+  USERNAME VARCHAR2(50),
+  PASSWORD VARCHAR2(50),
+  EMAIL VARCHAR2(50),
+  FIRST_NAME VARCHAR2(50),
+  LAST_NAME VARCHAR2(50)
+);
+
+ALTER TABLE WEB.USER ADD CONSTRAINT  IF NOT EXISTS WEB.CONSTRAINT_BPRIMARY KEY(USER_ID);
+INSERT INTO WEB.USER(USER_ID, USERNAME, PASSWORD, EMAIL, FIRST_NAME, LAST_NAME) VALUES
+  (1, NULL, NULL, NULL, NULL, NULL),
+  (33, NULL, NULL, NULL, NULL, NULL),
+  (65, 'rRrR', 'R', 'R', NULL, NULL),
+  (97, 'Ren', 'renereneren', 'rene@gmail.com', NULL, NULL),
+  (98, 'Ren', 'renereneren', 'rene@gmail.com', NULL, NULL),
+  (99, 'reneeeeee', 'nwelknwlkenjlwkjen', 'kwnekwjne@gmail.com', NULL, NULL),
+  (131, 'lmlmlmlklml', 'nwelknwlkenjlwkjen', 'kwnekwjne@gmail.com', NULL, NULL),
+  (132, 'sdfsdfsd', 'awdawdawd', 'awdawd@gmail.com', NULL, NULL),
+  (2, 'admin', 'admin', 'admin', 'admin', 'admin'),
+  (3, 'Rene', 'renepassword', 'rene1047@gmail.com', 'Rene', STRINGDECODE('R\u00e4kk')),
+  (3, STRINGDECODE('J\u00fcrgo'), STRINGDECODE('j\u00fcrgopassword'), 'jyrgo.pukk@gmail.com', STRINGDECODE('J\u00fcrgo'), 'Pukk');

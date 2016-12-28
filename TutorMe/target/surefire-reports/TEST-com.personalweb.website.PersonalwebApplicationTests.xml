@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.personalweb.website.PersonalwebApplicationTests" time="0.83" tests="5" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="idea.version" value="2016.2.4"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin"/>
+    <property name="java.vm.version" value="25.91-b15"/>
+    <property name="user.country.format" value="EE"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7535"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\rener\Desktop\repod\tutorme\TutorMe"/>
+    <property name="java.runtime.version" value="1.8.0_91-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\rener\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.2.4\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1257"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Dell\DW WLAN Card;;C:\Windows\SYSTEM32;C:\Windows;C:\Windows\SYSTEM32\WBEM;C:\Windows\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\rener"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="idea.launcher.bin.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.2.4\bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="rener"/>
+    <property name="java.class.path" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.2.4\plugins\maven\lib\maven3\boot\plexus-classworlds-2.4.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.2.4\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_91\jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.2.4 deploy"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="user.language.format" value="et"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_91"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.2.4\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="loginWithWrongUser" classname="com.personalweb.website.PersonalwebApplicationTests" time="0.748">
+    <error message="PreparedStatementCallback; uncategorized SQLException for SQL [SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ?]; SQL state [90079]; error code [90079]; Schema &quot;WEB&quot; not found; SQL statement:&#10;SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]; nested exception is org.h2.jdbc.JdbcSQLException: Schema &quot;WEB&quot; not found; SQL statement:&#10;SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]" type="org.springframework.jdbc.UncategorizedSQLException"><![CDATA[org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ?]; SQL state [90079]; error code [90079]; Schema "WEB" not found; SQL statement:
+SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]; nested exception is org.h2.jdbc.JdbcSQLException: Schema "WEB" not found; SQL statement:
+SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.getSchema(Parser.java:679)
+	at org.h2.command.Parser.getSchema(Parser.java:685)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1215)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1897)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2045)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1891)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1709)
+	at org.h2.command.Parser.parseSelect(Parser.java:1697)
+	at org.h2.command.Parser.parsePrepared(Parser.java:445)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:287)
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1521)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:627)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:662)
+	at com.personalweb.website.dao.CheckUserDAOImpl.getUser(CheckUserDAOImpl.java:26)
+	at com.personalweb.website.dao.CheckUserDAOImpl$$FastClassBySpringCGLIB$$8117db35.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at com.personalweb.website.dao.CheckUserDAOImpl$$EnhancerBySpringCGLIB$$b5d9de8c.getUser(<generated>)
+	at com.personalweb.website.service.LoginService.getUser(LoginService.java:22)
+	at com.personalweb.website.PersonalwebApplicationTests.loginWithWrongUser(PersonalwebApplicationTests.java:65)
+]]></error>
+    <system-out><![CDATA[22:42:10.011 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.021 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:42:10.031 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:42:10.051 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.personalweb.website.PersonalwebApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:42:10.071 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.personalweb.website.PersonalwebApplicationTests], using SpringBootContextLoader
+22:42:10.081 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.personalweb.website.PersonalwebApplicationTests]: class path resource [com/personalweb/website/PersonalwebApplicationTests-context.xml] does not exist
+22:42:10.081 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.personalweb.website.PersonalwebApplicationTests]: class path resource [com/personalweb/website/PersonalwebApplicationTestsContext.groovy] does not exist
+22:42:10.081 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.personalweb.website.PersonalwebApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:42:10.141 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.181 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.personalweb.website.PersonalwebApplicationTests]: using defaults.
+22:42:10.191 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:42:10.221 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a74868d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12c8a2c0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7e0e6aa2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@365185bd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@18bf3d14, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4fb64261, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@42607a4f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@782663d3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1990a65e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@64485a47, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@25bbf683, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6ec8211c]
+22:42:10.221 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.221 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.231 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.231 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:42:10.231 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:42:10.231 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.personalweb.website.PersonalwebApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:42:10.231 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.personalweb.website.PersonalwebApplicationTests], using SpringBootContextLoader
+22:42:10.231 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.personalweb.website.PersonalwebApplicationTests]: class path resource [com/personalweb/website/PersonalwebApplicationTests-context.xml] does not exist
+22:42:10.231 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.personalweb.website.PersonalwebApplicationTests]: class path resource [com/personalweb/website/PersonalwebApplicationTestsContext.groovy] does not exist
+22:42:10.231 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.personalweb.website.PersonalwebApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:42:10.241 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.241 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.personalweb.website.PersonalwebApplicationTests]: using defaults.
+22:42:10.251 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:42:10.251 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@61ca2dfa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b53f538, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@134593bf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4bb4de6a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7ba18f1b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f8f5f62, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1068e947, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7dc222ae, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@aecb35a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5fcd892a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@8b87145, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6483f5ae]
+22:42:10.251 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.251 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.261 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.261 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.261 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4f51b3e0 testClass = PersonalwebApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4b9e255 testClass = PersonalwebApplicationTests, locations = '{}', classes = '{class com.personalweb.website.PersonalwebApplication, class com.personalweb.website.PersonalwebApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@527740a2, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@370736d9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2b552920], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+22:42:10.261 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.261 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.personalweb.website.PersonalwebApplicationTests]
+22:42:10.351 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+22:42:10.351 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+22:42:10.351 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+22:42:10.361 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+22:42:10.361 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.1.RELEASE)
+
+2016-11-24 22:42:10.890  INFO 7980 --- [           main] c.p.website.PersonalwebApplicationTests  : Starting PersonalwebApplicationTests on LAP-RENER with PID 7980 (started by rener in C:\Users\rener\Desktop\repod\tutorme\TutorMe)
+2016-11-24 22:42:10.900  INFO 7980 --- [           main] c.p.website.PersonalwebApplicationTests  : No active profile set, falling back to default profiles: default
+2016-11-24 22:42:10.950  INFO 7980 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2cf3d63b: startup date [Thu Nov 24 22:42:10 EET 2016]; root of context hierarchy
+2016-11-24 22:42:12.098  INFO 7980 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-11-24 22:42:12.403  INFO 7980 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'mvcContentNegotiationManager' with a different definition: replacing [Root bean: class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=mvcContentNegotiationManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]]
+2016-11-24 22:42:12.403  INFO 7980 --- [           main] a.ConfigurationClassBeanDefinitionReader : Skipping bean definition for [BeanMethod:name=mvcUriComponentsContributor,declaringClass=org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport]: a definition for bean 'mvcUriComponentsContributor' already exists. This top-level bean definition is considered as an override.
+2016-11-24 22:42:12.943  INFO 7980 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-24 22:42:13.013  INFO 7980 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90043796] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-24 22:42:13.148  INFO 7980 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: org.h2.Driver
+2016-11-24 22:42:13.888  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/facebook],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.FacebookController.helloFacebook(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2016-11-24 22:42:13.888  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.FrontPageController.myUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/forgot],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.LoginController.index(org.springframework.ui.Model)
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST],params=[registerButton]}" onto public java.lang.String com.personalweb.website.controller.LoginController.register(org.springframework.ui.Model)
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main],methods=[POST]}" onto public java.lang.String com.personalweb.website.controller.LoginController.login(javax.servlet.http.HttpServletRequest,com.personalweb.website.form.PageUser,org.springframework.validation.BindingResult,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.LoginController.forgot(org.springframework.ui.Model)
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/forgot],methods=[POST],params=[forgotPassword]}" onto public java.lang.String com.personalweb.website.controller.LoginController.userRecovery(org.springframework.ui.Model)
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Register],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.RegistrationController.index(org.springframework.ui.Model)
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Register],methods=[POST],params=[loginButton]}" onto public java.lang.String com.personalweb.website.controller.RegistrationController.login(org.springframework.ui.Model)
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Register/facebook],methods=[POST],params=[loginButton]}" onto public java.lang.String com.personalweb.website.controller.RegistrationController.facebookRegister(org.springframework.ui.Model)
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Register],methods=[POST],params=[submitButton]}" onto public java.lang.String com.personalweb.website.controller.RegistrationController.submitUser(com.personalweb.website.form.RegisterUser,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) throws java.io.IOException
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{keyword}],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.SearchController.myUser(java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:13.898  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/other/{userID}],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.SearchController.showUser(java.lang.Long,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:13.908  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.myUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:13.908  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.getfile(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException,javax.servlet.ServletException
+2016-11-24 22:42:13.908  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.advertisement(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2016-11-24 22:42:13.908  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.addAdvertisement(javax.servlet.http.HttpServletRequest,com.personalweb.website.form.Advertisement,org.springframework.ui.Model)
+2016-11-24 22:42:13.908  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/edit],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.edit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2016-11-24 22:42:13.908  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/edit],methods=[POST]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.postEdit(javax.servlet.http.HttpServletRequest,com.personalweb.website.form.PageUser,org.springframework.ui.Model)
+2016-11-24 22:42:13.908  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/myAds],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.showAds(javax.servlet.http.HttpServletRequest,com.personalweb.website.form.PageUser,org.springframework.ui.Model)
+2016-11-24 22:42:13.918  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-24 22:42:13.918  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-24 22:42:13.928  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[POST]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.connect(java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:13.928  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[GET],params=[error]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.oauth2ErrorCallback(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:13.928  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[GET]}" onto public java.lang.String org.springframework.social.connect.web.ConnectController.connectionStatus(java.lang.String,org.springframework.web.context.request.NativeWebRequest,org.springframework.ui.Model)
+2016-11-24 22:42:13.928  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect],methods=[GET]}" onto public java.lang.String org.springframework.social.connect.web.ConnectController.connectionStatus(org.springframework.web.context.request.NativeWebRequest,org.springframework.ui.Model)
+2016-11-24 22:42:13.928  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[GET],params=[oauth_token]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.oauth1Callback(java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:13.928  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[GET],params=[code]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.oauth2Callback(java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:13.928  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}/{providerUserId}],methods=[DELETE]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.removeConnection(java.lang.String,java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:13.928  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[DELETE]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.removeConnections(java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:14.058  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2cf3d63b: startup date [Thu Nov 24 22:42:10 EET 2016]; root of context hierarchy
+2016-11-24 22:42:14.118  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2cf3d63b: startup date [Thu Nov 24 22:42:10 EET 2016]; root of context hierarchy
+2016-11-24 22:42:14.572  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2cf3d63b: startup date [Thu Nov 24 22:42:10 EET 2016]; root of context hierarchy
+2016-11-24 22:42:14.592  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login/facebook],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.FacebookController.helloFacebook(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2016-11-24 22:42:14.593  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.FrontPageController.myUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:14.598  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/forgot],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.LoginController.index(org.springframework.ui.Model)
+2016-11-24 22:42:14.599  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/signup],methods=[POST],params=[registerButton]}" onto public java.lang.String com.personalweb.website.controller.LoginController.register(org.springframework.ui.Model)
+2016-11-24 22:42:14.599  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/main],methods=[POST]}" onto public java.lang.String com.personalweb.website.controller.LoginController.login(javax.servlet.http.HttpServletRequest,com.personalweb.website.form.PageUser,org.springframework.validation.BindingResult,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:14.600  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.LoginController.forgot(org.springframework.ui.Model)
+2016-11-24 22:42:14.600  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/forgot],methods=[POST],params=[forgotPassword]}" onto public java.lang.String com.personalweb.website.controller.LoginController.userRecovery(org.springframework.ui.Model)
+2016-11-24 22:42:14.603  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Register],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.RegistrationController.index(org.springframework.ui.Model)
+2016-11-24 22:42:14.604  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Register],methods=[POST],params=[loginButton]}" onto public java.lang.String com.personalweb.website.controller.RegistrationController.login(org.springframework.ui.Model)
+2016-11-24 22:42:14.604  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Register/facebook],methods=[POST],params=[loginButton]}" onto public java.lang.String com.personalweb.website.controller.RegistrationController.facebookRegister(org.springframework.ui.Model)
+2016-11-24 22:42:14.605  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Register],methods=[POST],params=[submitButton]}" onto public java.lang.String com.personalweb.website.controller.RegistrationController.submitUser(com.personalweb.website.form.RegisterUser,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest) throws java.io.IOException
+2016-11-24 22:42:14.606  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/{keyword}],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.SearchController.myUser(java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:14.608  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/other/{userID}],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.SearchController.showUser(java.lang.Long,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:14.614  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.myUser(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException
+2016-11-24 22:42:14.615  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.getfile(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model) throws java.io.IOException,javax.servlet.ServletException
+2016-11-24 22:42:14.625  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.advertisement(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2016-11-24 22:42:14.625  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.addAdvertisement(javax.servlet.http.HttpServletRequest,com.personalweb.website.form.Advertisement,org.springframework.ui.Model)
+2016-11-24 22:42:14.625  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/edit],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.edit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2016-11-24 22:42:14.626  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/edit],methods=[POST]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.postEdit(javax.servlet.http.HttpServletRequest,com.personalweb.website.form.PageUser,org.springframework.ui.Model)
+2016-11-24 22:42:14.626  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/myAds],methods=[GET]}" onto public java.lang.String com.personalweb.website.controller.UserInfoController.showAds(javax.servlet.http.HttpServletRequest,com.personalweb.website.form.PageUser,org.springframework.ui.Model)
+2016-11-24 22:42:14.630  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-24 22:42:14.631  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-24 22:42:14.635  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[POST]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.connect(java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:14.635  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[GET],params=[error]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.oauth2ErrorCallback(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:14.636  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[GET]}" onto public java.lang.String org.springframework.social.connect.web.ConnectController.connectionStatus(java.lang.String,org.springframework.web.context.request.NativeWebRequest,org.springframework.ui.Model)
+2016-11-24 22:42:14.637  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect],methods=[GET]}" onto public java.lang.String org.springframework.social.connect.web.ConnectController.connectionStatus(org.springframework.web.context.request.NativeWebRequest,org.springframework.ui.Model)
+2016-11-24 22:42:14.638  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[GET],params=[oauth_token]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.oauth1Callback(java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:14.640  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[GET],params=[code]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.oauth2Callback(java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:14.641  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}/{providerUserId}],methods=[DELETE]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.removeConnection(java.lang.String,java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:14.641  INFO 7980 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/{providerId}],methods=[DELETE]}" onto public org.springframework.web.servlet.view.RedirectView org.springframework.social.connect.web.ConnectController.removeConnections(java.lang.String,org.springframework.web.context.request.NativeWebRequest)
+2016-11-24 22:42:14.694  INFO 7980 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-24 22:42:14.694  INFO 7980 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-24 22:42:14.746  INFO 7980 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-24 22:42:15.465  INFO 7980 --- [           main] c.p.website.PersonalwebApplicationTests  : Started PersonalwebApplicationTests in 5.092 seconds (JVM running for 5.883)
+2016-11-24 22:42:15.796  INFO 7980 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-24 22:42:15.852  INFO 7980 --- [           main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+]]></system-out>
+  </testcase>
+  <testcase name="getPeopleCount" classname="com.personalweb.website.PersonalwebApplicationTests" time="0.016">
+    <error message="PreparedStatementCallback; uncategorized SQLException for SQL [select count(*) as total from web.user]; SQL state [90079]; error code [90079]; Schema &quot;WEB&quot; not found; SQL statement:&#10;select count(*) as total from web.user [90079-193]; nested exception is org.h2.jdbc.JdbcSQLException: Schema &quot;WEB&quot; not found; SQL statement:&#10;select count(*) as total from web.user [90079-193]" type="org.springframework.jdbc.UncategorizedSQLException"><![CDATA[org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [select count(*) as total from web.user]; SQL state [90079]; error code [90079]; Schema "WEB" not found; SQL statement:
+select count(*) as total from web.user [90079-193]; nested exception is org.h2.jdbc.JdbcSQLException: Schema "WEB" not found; SQL statement:
+select count(*) as total from web.user [90079-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.getSchema(Parser.java:679)
+	at org.h2.command.Parser.getSchema(Parser.java:685)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1215)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1897)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2045)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1891)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1709)
+	at org.h2.command.Parser.parseSelect(Parser.java:1697)
+	at org.h2.command.Parser.parsePrepared(Parser.java:445)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:287)
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1521)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:627)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:662)
+	at com.personalweb.website.dao.InfoDAOImpl.getPeopleCount(InfoDAOImpl.java:28)
+	at com.personalweb.website.dao.InfoDAOImpl$$FastClassBySpringCGLIB$$1fe313ae.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at com.personalweb.website.dao.InfoDAOImpl$$EnhancerBySpringCGLIB$$f3821b97.getPeopleCount(<generated>)
+	at com.personalweb.website.service.InfoService.getPeopleCount(InfoService.java:19)
+	at com.personalweb.website.PersonalwebApplicationTests.getPeopleCount(PersonalwebApplicationTests.java:47)
+]]></error>
+  </testcase>
+  <testcase name="adminLoginTest" classname="com.personalweb.website.PersonalwebApplicationTests" time="0.066">
+    <error message="PreparedStatementCallback; uncategorized SQLException for SQL [SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ?]; SQL state [90079]; error code [90079]; Schema &quot;WEB&quot; not found; SQL statement:&#10;SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]; nested exception is org.h2.jdbc.JdbcSQLException: Schema &quot;WEB&quot; not found; SQL statement:&#10;SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]" type="org.springframework.jdbc.UncategorizedSQLException"><![CDATA[org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ?]; SQL state [90079]; error code [90079]; Schema "WEB" not found; SQL statement:
+SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]; nested exception is org.h2.jdbc.JdbcSQLException: Schema "WEB" not found; SQL statement:
+SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.getSchema(Parser.java:679)
+	at org.h2.command.Parser.getSchema(Parser.java:685)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1215)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1897)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2045)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1891)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1709)
+	at org.h2.command.Parser.parseSelect(Parser.java:1697)
+	at org.h2.command.Parser.parsePrepared(Parser.java:445)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:287)
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1521)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:627)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:662)
+	at com.personalweb.website.dao.CheckUserDAOImpl.getUser(CheckUserDAOImpl.java:26)
+	at com.personalweb.website.dao.CheckUserDAOImpl$$FastClassBySpringCGLIB$$8117db35.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at com.personalweb.website.dao.CheckUserDAOImpl$$EnhancerBySpringCGLIB$$b5d9de8c.getUser(<generated>)
+	at com.personalweb.website.service.LoginService.getUser(LoginService.java:22)
+	at com.personalweb.website.PersonalwebApplicationTests.adminLoginTest(PersonalwebApplicationTests.java:52)
+]]></error>
+  </testcase>
+  <testcase name="loginWhitNullUser" classname="com.personalweb.website.PersonalwebApplicationTests" time="0">
+    <error message="PreparedStatementCallback; uncategorized SQLException for SQL [SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ?]; SQL state [90079]; error code [90079]; Schema &quot;WEB&quot; not found; SQL statement:&#10;SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]; nested exception is org.h2.jdbc.JdbcSQLException: Schema &quot;WEB&quot; not found; SQL statement:&#10;SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]" type="org.springframework.jdbc.UncategorizedSQLException"><![CDATA[org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ?]; SQL state [90079]; error code [90079]; Schema "WEB" not found; SQL statement:
+SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]; nested exception is org.h2.jdbc.JdbcSQLException: Schema "WEB" not found; SQL statement:
+SELECT * FROM WEB.USER WHERE EMAIL = ? AND PASSWORD = ? [90079-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.getSchema(Parser.java:679)
+	at org.h2.command.Parser.getSchema(Parser.java:685)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1215)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1897)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2045)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1891)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1709)
+	at org.h2.command.Parser.parseSelect(Parser.java:1697)
+	at org.h2.command.Parser.parsePrepared(Parser.java:445)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:287)
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1521)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:627)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:662)
+	at com.personalweb.website.dao.CheckUserDAOImpl.getUser(CheckUserDAOImpl.java:26)
+	at com.personalweb.website.dao.CheckUserDAOImpl$$FastClassBySpringCGLIB$$8117db35.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at com.personalweb.website.dao.CheckUserDAOImpl$$EnhancerBySpringCGLIB$$b5d9de8c.getUser(<generated>)
+	at com.personalweb.website.service.LoginService.getUser(LoginService.java:22)
+	at com.personalweb.website.PersonalwebApplicationTests.loginWhitNullUser(PersonalwebApplicationTests.java:57)
+]]></error>
+  </testcase>
+  <testcase name="contextLoads" classname="com.personalweb.website.PersonalwebApplicationTests" time="0"/>
+</testsuite>

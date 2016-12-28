@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+<div class="header">
+    <a href="/main"><h1 class="header-title">TUTORME</h1></a>
+    <form class="search-container">
+        <input type="text" id="search-bar" placeholder="What would you like to learn today?"/>
+        <a href="#" onclick="setHeader()" id="searchLink"><img class="search-icon" src="/images/search-icon.png"/></a>
+        <script>
+            function setHeader() {
+                var keyword = document.getElementById('search-bar').value;
+                document.getElementById('searchLink').setAttribute('href', '/search/'+keyword);
+            }
+        </script>
+    </form>
+    <a th:href="@{/user}"><img th:src="${user.imagesrc}" id="header-image"/></a>
+</div>
+
+<div layout:fragment="content">
+    <!--Content goes here-->
+</div>
+<hr>
+<div id="footer">
+    <div>
+    <div class="socialsy bgfc">
+        <div>
+            <i class="fa fa-facebook"></i>
+        </div>
+    </div>
+    <div class="socialsy bgtw">
+        <div>
+            <i class="fa fa-twitter"></i>
+        </div>
+    </div>
+    <div class="socialsy bgins">
+        <div>
+            <i class="fa fa-instagram"></i>
+        </div>
+    </div>
+</div>
+    </div>
+</hr>
+<div class="footer">
+    <a href="https://www.facebook.com/rene.rakk">
+    <div class="social facebook">&#62220;</div>
+    </a>
+    <div class="social twitter">&#62217;</div>
+    <div class="social google">&#62223;</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: TutorMe
+Implementation-Version: 1
+Built-By: rener
+Implementation-Vendor-Id: com.tutorme
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8.0_91
+Main-Class: ${start-class}
+

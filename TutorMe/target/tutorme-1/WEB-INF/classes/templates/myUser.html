@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/html" layout:decorator="layout">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/image-select.css"/>
+    <meta charset="UTF-8"/>
+    <title>My profile</title>
+</head>
+
+<body>
+
+<div layout:fragment="content" >
+    <!--Html for header ends here, should be included dynamically-->
+    <div class="user-functions">
+        <label for="image">
+            <form action="#"  method="post" enctype="multipart/form-data">
+                <div class="image-select">
+                    <input name ="uploadedImage" id="image" type="file" onchange="submit()" />
+                    <i class="fa fa-camera fa-2x image-select__icon"></i>
+                    <img th:src="${user.imagesrc}" class="profile-picture"/>
+                </div>
+            </form>
+        </label>
+        <a th:href="@{user/edit}"><button class="user-buttons">EDIT INFO</button></a>
+        <a th:href="@{user/add}" ><button class="user-buttons">LISA KUULUTUS</button></a>
+        <a th:href="@{user/myAds}" ><button class="user-buttons">MINU KUULUTUSED</button></a>
+    </div>
+    <div class="user-information">
+        <div th:if="${user.fullName} != null">
+        <h1  class="profile-title" th:text="${user.fullName}">Rene Räkk</h1>
+        </div>
+        <h1 th:if="${user.education} != null" class="profile-title" th:text="'Haridus: '+${user.education}">Tallinna Tehnikaülikool</h1>
+        <h1 th:if="${user.speciality} != null" class="profile-title" th:text="'Eriala: '+${user.speciality}">Eriala: Informaatika</h1>
+        <h1 th:if="${user.age} != null" class="profile-title" th:text="'Vanus: '+${user.age}">Vanus: 21</h1>
+        <h1  class="profile-title" th:text="'E-mail: '+${user.email}">E-mail: rerakk@ttu.ee</h1>
+        <h1 th:if="${user.phone} != null" class="profile-title" th:text="'Telefon: '+${user.phone}">Telefon: 5268543</h1>
+    </div>
+</div>
+</body>
+</html>

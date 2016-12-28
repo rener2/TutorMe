@@ -1,0 +1,55 @@
+
+
+#navbar {
+    background-color: #2B3E50;
+    border-radius: 0px;
+    border-color: #2B3E50;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+}
+
+.text-primary {
+    color: white !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+}
+
+body {
+    /*background-color: #2B3E50 !important;*/
+    background: url(images/blackboard.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+}
+
+#news {
+    padding: 20px;
+}
+
+#subjects {
+    margin-top: 40px;
+}
+
+#nav-table a {
+    text-decoration: none;
+    color: white;
+}
+#footer-div {
+    height: 150px;
+    background-color: #2B3E50;
+}
+
+#contact {
+    margin-top: 30px;
+    font-weight: 100;
+    font-size: large;
+    color: #DC742B;
+}

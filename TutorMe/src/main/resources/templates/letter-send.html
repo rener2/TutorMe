@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/html" layout:decorator="layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Inbox</title>
+</head>
+
+<body>
+
+<div layout:fragment="content" >
+    <form id="letterform" th:object="${newMessage}" method="post">
+        <h1 class="letter-titles">Subject</h1>
+
+        <input id="title" th:field="*{subject}" required="required"/>
+
+        <h1 class="letter-titles">Content</h1>
+
+        <textarea rows="4" cols="50" name="comment" required="required" form="letterform" id="content" th:field="*{text}">
+    </textarea>
+
+        <button type="submit" class="user-buttons" id="letter-submit" for="letterForm">SEND</button>
+    </form>
+</div>
+</body>
+</html>

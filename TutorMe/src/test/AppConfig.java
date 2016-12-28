@@ -41,7 +41,6 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
         viewResolver.setTemplateEngine(getTemplateEngine());
         viewResolver.setOrder(1);
-        System.out.println("eeee");
         return viewResolver;
     }
 */
@@ -49,7 +48,6 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     @Bean(name ="messageSource")
     public MessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-        System.out.println("asfasf");
         messageSource.setBasename("classpath:/error");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;

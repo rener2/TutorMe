@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/html" layout:decorator="layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Results</title>
+</head>
+
+<body>
+
+<div layout:fragment="content" class="content">
+    <h1 id="frontpage-title">Tulemused</h1>
+    <div th:each="ad:${ads}">
+        <hr></hr>
+        <div class="sample-tutors">
+            <a th:href="@{'other/'+${ad.poster.userID}}"><img th:src="${ad.poster.imagesrc}" class="content-image"/></a>
+            <h1 class="tutor-title" th:text="${ad.poster.firstName}+' - '+${ad.poster.age}+'.a ('+${ad.poster.education}+')'"></h1>
+            <p class="tutor-information" th:text="'Õpetan: '+${ad.subject}"></p>
+            <p class="tutor-information" th:text="'Suhtluskeel: '+${ad.studyLanguage}"></p>
+            <p class="tutor-information" th:text="'Tunnitasu: '+${ad.hourlyFee}"></p>
+            <p class="tutor-information" th:text="'Kontakt: '+${ad.poster.email}"></p>
+        </div>
+    </div>
+    <div th:each="us:${users}">
+        <hr></hr>
+        <div class="sample-tutors">
+            <a th:href="@{'/other/'+${us.userID}}"><img th:src="${us.imagesrc}" class="content-image"/></a>
+            <h1 class="tutor-title" th:text="${us.fullName}"></h1>
+            <p class="tutor-information" th:text="'Vanus: '+${us.age}"></p>
+            <p class="tutor-information" th:text="'Haridus: '+${us.education}"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

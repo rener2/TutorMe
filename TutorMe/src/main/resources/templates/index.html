@@ -1,61 +1,27 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8"/>
-    <title>TutorMe</title>
-    <link rel='stylesheet prefetch' href='css/bootstrap.min.css' th:href="@{css/335bootstrap.min.css}"/>
-    <link rel="stylesheet" href="css/style.css" th:href="@{css/style.css}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/login-style.css" th:href="@{css/login-style.css}"/>
+    <title>Login</title>
 </head>
 <body>
-<html>
-<head>
-    <title>LOGIN</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}"/>
-    <link rel="stylesheet" href="css/style.css" th:href="@{css/style.css}"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300" type="text/css"/>
-</head>
-<body>
-<div class="container login-wrap">
-    <!-- OUTER WRAP -->
-    <div class="outer-wrap">
-        <!-- INNER WRAP -->
-        <div class="inner-wrap">
-            <h2 class="login-head">TUTORME</h2>
 
-            <form action="#" th:action="@{/}" th:object="${user}" method="post">
-                <div class="form-wrap">
-                    <div class="form-group">
-                        <input class="form-control input-lg" type="username" placeholder="Username" th:field="*{username}"/>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control input-lg" type="password" placeholder="Password" th:field="*{password}"/>
-                    </div>
-                    <button class="btn btn-default btn-lg submit-button" type="submit">LOGIN</button>
-                </div>
-            </form>
-            <div class="forgot-pw">
-                <a href="#"><h6>Forgot password?</h6></a>
-            </div>
-            <div class="sign-up">
-                <a href="signup.html"><h6>Sign up</h6></a>
-            </div>
-        </div>
-        <!-- INNER WRAP - END -->
-    </div>
-    <!-- OUTER WRAP - END -->
+<div id="login-form">
+    <h1 id="title">Login</h1>
+    <form action="/connect/facebook" method="POST">
+        <input type="hidden" name="scope" value="email" />
+        <button class="social-signup facebook">Login with Facebook</button>
+    </form>
+    <form action="#" th:action="@{/main}" th:object="${user}" method="post">
+        <div class="separator"><span>or</span></div>
+        <input type="email" name="email" class="form-input" placeholder="Email"/>
+        <input type="password" name="password" class="form-input" placeholder="Password"/>
+        <button type="submit" class="form-button">LOGIN</button>
+        <a th:href="@{'/Register'}" class="form-link">Sign up</a>
+        <a th:href="@{'/forgot'}" class="form-link">Forgot password?</a>
+    </form>
 </div>
-<!-- CONTAINER - END -->
-
-<!-- BOOTSTRAP JS -->
-<script src="js/335bootstrap.min.js"></script>
-</body>
-
-</html>
-<script src='js/jquery.min.js'></script>
-<script src='js/335bootstrap.min.js'></script>
-
-
-
-
 </body>
 </html>

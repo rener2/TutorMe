@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/html" layout:decorator="layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="${otherUser.fullName}">Profile</title>
+</head>
+
+<body>
+
+<div layout:fragment="content" >
+    <div class="user-functions">
+        <img th:src="${otherUser.imagesrc}" class="profile-picture"/>
+        <div class="user-information">
+        <div th:if="${otherUser.fullName} != null">
+            <h1  class="profile-title" th:text="${otherUser.fullName}">Rene Räkk</h1>
+        </div>
+        <h1 th:if="${otherUser.education} != null" class="profile-title" th:text="'Haridus: '+${otherUser.education}">Tallinna Tehnikaülikool</h1>
+        <h1 th:if="${otherUser.speciality} != null" class="profile-title" th:text="'Eriala: '+${otherUser.speciality}">Eriala: Informaatika</h1>
+        <h1 th:if="${otherUser.age} != null" class="profile-title" th:text="'Vanus: '+${otherUser.age}">Vanus: 21</h1>
+        <h1  class="profile-title" th:text="'E-mail: '+${otherUser.email}">E-mail: rerakk@ttu.ee</h1>
+        <h1 th:if="${otherUser.phone} != null" class="profile-title" th:text="'Telefon: '+${otherUser.phone}">Telefon: 5268543</h1>
+        </div>
+    </div>
+    <div class="user-functions">
+        <a th:href="@{'/other/'+${otherUser.userID}+'/add'}"><button class="user-buttons">LISA SÕBRAKS</button></a> <!-- see teha muud moodi -->
+        <a th:href="@{'/other/'+${otherUser.userID}+'/message'}" ><button class="user-buttons">SAADA KIRI</button></a>
+        <a th:href="@{'/other/'+${otherUser.userID}+'/ads'}" ><button class="user-buttons">VAATA KASUTAJA KUULUTUSI</button></a>
+    </div>
+</div>
+</body>
+</html>

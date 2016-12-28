@@ -1,0 +1,470 @@
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
+body{
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 60em;
+}
+
+/*header.html style*/
+.header{
+    position: relative;
+}
+
+.header-title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 80px;
+    color: black;
+}
+
+.search-container{
+    width: 490px;
+    display: inline-block;
+
+}
+
+input#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+&:focus{
+     border: 1px solid #008ABF;
+     transition: 0.35s ease;
+     color: #008ABF;
+&::-webkit-input-placeholder{
+     transition: opacity 0.45s ease;
+     opacity: 0;
+ }
+&::-moz-placeholder {
+     transition: opacity 0.45s ease;
+     opacity: 0;
+ }
+&:-ms-placeholder {
+     transition: opacity 0.45s ease;
+     opacity: 0;
+ }
+}
+}
+
+.search-icon{
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    top: -45px;
+    right: -40px;
+}
+
+#header-image {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    float: right;
+    margin-top: -5px;
+}
+/*header.html style end*/
+
+/*index.html style*/
+
+.sample-tutors {
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 300px;
+    display: block;
+}
+
+.content-image {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+
+}
+
+.tutor-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    margin-left: 150px;
+    margin-top: -100px;
+}
+
+.tutor-information {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    margin-left: 150px;
+    padding: 1em;
+    line-height: 1.5;
+    margin-bottom: -35px;
+    margin-top: -15px;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+#frontpage-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+/*index.html style end*/
+
+/*profile.html style*/
+.user-functions {
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+}
+
+.user-information {
+    width: 39%;
+    background-color: #313A3D;
+    display: inline-block;
+    margin-top: -500px;
+    color: lightgray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.profile-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.user-buttons {
+    background-color: #313A3D;
+    height: 100px;
+    width: 500px;
+    color: lightgray;
+    margin: 20px 10px 10px 10px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: large;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+/*profile.html style end*/
+
+/*editInfo.html style*/
+.edit-user-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.edit-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.edit-inputs {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    height: 60px;
+    width: 500px;
+}
+/*editInfo.html style end*/
+
+/*advertisement.html style*/
+#ad-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#ad-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    height: 60px;
+    width: 500px;
+    margin: 15px;
+}
+
+#ad-info {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    height: 300px;
+    width: 500px;
+    margin: 10px;
+}
+
+button.social-signup {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 70px;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 150%;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+button.social-signup:hover,
+button.social-signup:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+}
+
+button.social-signup:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+}
+
+button.social-signup.facebook {
+    background: #32508E;
+}
+
+/*social buttons*/
+
+.socialsy {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    margin: 3px 0 0 30px;
+    border: none;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    transform: rotateZ(-45deg)   ;
+    -webkit-transform-origin: 0 100% 0deg;
+    transform-origin: 0 100% 0deg;
+    float:left;
+    margin-top:10px;
+    margin-left:12px;
+    cursor:pointer;
+}
+.socialsy div{
+    width: 20px;
+    height: 20px;
+    transform: rotateZ(45deg);
+    font-size:17px;
+    text-align:center;
+    line-height:22px;
+    color:#2a323a;
+    font-weight:bold;
+}
+
+/*Facebook Button*/
+.bgfc{
+    border:3px solid #eeeeee;
+    background-color: #ddd;
+    transition:all .7s;
+}
+.bgfc div{
+    color:gray;
+    transition:all .7s;
+}
+
+.bgfc:hover{
+    border:3px solid #3a5795;
+    background-color: rgba(58, 87, 149, .8);
+    transition:all .7s;
+}
+.bgfc:hover div{
+    color:#fff;
+    transition:all .7s;
+}
+
+/*Twitter Button*/
+.bgtw{
+    border:3px solid #eeeeee;
+    background-color: #ddd;
+    transition:all .7s;
+}
+.bgtw div{
+    color:#55acee;
+    transition:all .7s;
+}
+
+.bgtw:hover{
+    border:3px solid #55acee;
+    background-color: rgba(85, 172, 238, .8);
+    transition:all .7s;
+}
+.bgtw:hover div{
+    color:#fff;
+    transition:all .7s;
+}
+
+/*İnstagram Button*/
+.bgins{
+    border:3px solid #eeeeee;
+    background-color: #ddd;
+    transition:all .7s;
+}
+.bgins div{
+    color:#125688;
+    transition:all .7s;
+}
+
+.bgins:hover{
+    border:3px solid #125688;
+    background-color: rgba(18, 86, 136, .8);
+    transition:all .7s;
+
+}
+.bgins:hover div{
+    color:#fff;
+    transition:all .7s;
+}
+
+
+
+
+.footer {
+
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social {
+    border:3px solid #eeeeee;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    line-height: 30px;
+    font-family: Entypo;
+    font-size: 15px;
+    text-align: center;
+    color: #bbb;
+    border-radius: 50%;
+    background: #eee;
+    overflow: hidden;
+    transition: color .3s;
+}
+
+.social:hover {
+    cursor: pointer;
+}
+.facebook:hover {
+    color: #FFFFFF;
+    border:3px solid #3a5795;
+    background-color: rgba(58, 87, 149, .8);
+    transition:all .7s;
+}
+
+.twitter:hover {
+    color: #FFFFFF;
+    border:3px solid #55acee;
+    background-color: #5bc0de;
+    transition:all .7s;
+}
+.google:hover {
+    color: #FFFFFF;
+    border:3px solid #ac2925;
+    background-color: indianred;
+    transition:all .7s;
+}
+/*advertisement.html style end*/
+
+
+#inbox-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.inbox-element {
+    height: 50px;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: block;
+}
+
+.inbox-content {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    text-align: left;
+    padding: 20px;
+}
+/*inbox.html style end*/
+
+/*Style for the five star rating system*/
+
+.field label, .field input[type=radio] {display:none}
+
+.field input[type=radio]:checked ~ label {display:inline-block}
+
+.field label {font-size:2.7rem;line-height:1.3rem;color:#444}
+
+.rating {
+    display:inline-block;
+    margin-left: 700px;
+}
+
+/*Rating style end*/
+
+
+/*letter-send.html style*/
+
+.letter-titles {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    text-align: left;
+}
+
+#title {
+    height: 40px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: large;
+}
+
+#content {
+    height: 300px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: large;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/*letter-send.html style end*/
+
+/*letter-recieve style */
+.received-messages {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: large;
+
+}
+/*letter-recieve style end */

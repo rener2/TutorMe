@@ -5,5 +5,6 @@ import com.personalweb.website.form.PageUser;
 
 public interface NewUserDAO {
 
-    public String addUser(PageUser user);
+    String addUser(PageUser user);
+    String addFbUser(PageUser user);
 }

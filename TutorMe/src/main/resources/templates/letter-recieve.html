@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/html" layout:decorator="layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Inbox</title>
+</head>
+
+<body>
+
+<div layout:fragment="content" >
+    <h1 class="letter-titles" >Subject</h1>
+
+    <h2 class="received-messages" th:text="${currentMessage.subject}">This is not important at this very moment</h2>
+
+    <h1 class="letter-titles">Content</h1>
+
+    <h2 class="received-messages" th:text="${currentMessage.text}">Tere,
+        Sooviksin võtta eratunde matemaatikas. Palun saatke mulle oma tunnihind ja kontaktandmed.
+
+        JP.</h2>
+</div>
+</body>
+</html>

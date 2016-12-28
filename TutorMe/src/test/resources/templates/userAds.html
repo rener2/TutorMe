@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/html" layout:decorator="layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Welcome!</title>
+</head>
+
+<body>
+
+<div layout:fragment="content" class="content">
+    <h1 id="frontpage-title">Minu kuulutused</h1>
+    <div th:each="ad:${userAds}">
+        <hr></hr>
+        <div class="sample-tutors">
+            <a href="#"><img th:src="${ad.poster.imagesrc}" class="content-image"/></a>
+            <h1 class="tutor-title" th:text="${ad.poster.firstName}+' - '+${ad.poster.age}+'.a ('+${ad.poster.education}+')'"></h1>
+            <p class="tutor-information" th:text="'Õpetan: '+${ad.subject}"></p>
+            <p class="tutor-information" th:text="'Suhtluskeel: '+${ad.studyLanguage}"></p>
+            <p class="tutor-information" th:text="'Tunnitasu: '+${ad.hourlyFee}"></p>
+            <p class="tutor-information" th:text="'Kontakt: '+${ad.poster.email}"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

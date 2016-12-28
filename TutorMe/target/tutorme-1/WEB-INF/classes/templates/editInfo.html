@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/html" layout:decorator="layout">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Edit info</title>
+    <link rel="stylesheet" type="text/css" href="/css/datepicker.css"/>
+    <script type="text/javascript" src="/js/datepicker.js"></script>
+
+</head>
+<body>
+<div layout:fragment="content" class="edit-user-info">
+    <img th:src="${user.imagesrc}" class="profile-picture"/>
+    <form action="#" th:object="${user}" method="post">
+    <h2 class="edit-text">Eesnimi:</h2>
+        <input type="text" name="FirstName" class="edit-inputs" th:field="*{firstName}" placeholder="Rene"/><br></br>
+    <h2 class="edit-text">Perekonna nimi:</h2>
+        <input type="text" name="LastName" class="edit-inputs" th:field="*{lastName}" placeholder="Räkk"/><br></br>
+    <h2 class="edit-text">Kool:</h2>
+        <input type="text" name="School" class="edit-inputs" th:field="*{education}" placeholder="TTÜ"/><br></br>
+    <h2 class="edit-text">Eriala:</h2>
+        <input type="text" name="Eriala" class="edit-inputs" th:field="*{speciality}" placeholder="Informaatika"/><br></br>
+    <h2 class="edit-text">E-mail:</h2>
+        <input type="text" name="Email" class="edit-inputs" th:field="*{email}" placeholder="rerakk@ttu.ee"/><br></br>
+    <h2 class="edit-text">Telefon:</h2>
+        <input type="text" name="Phone" class="edit-inputs" th:field="*{phone}" placeholder="5862443"/><br></br>
+        <h2 class="edit-text">Sünniaeg(dd/MM/yyyy):</h2>
+    <!--    <input type="text" name="date" class="edit-inputs" th:field="*{birthdate}" placeholder="21/11/1998"/><br></br>-->
+
+        <div class="datebox">
+            <input type="text" id="datePicker" class="edit-inputs" th:field="*{birthdate}"/>
+        </div>
+        <button class="user-buttons">SALVESTA</button>
+    </form>
+
+</div>
+</body>
+</html>
